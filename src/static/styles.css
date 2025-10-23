@@ -94,6 +94,40 @@ section h3 {
   border-bottom: 1px solid rgba(0,0,0,0.04);
 }
 
+/* Hide default bullets and make the list clean */
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.participant-email {
+  color: #263238;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.participant-remove {
+  background: transparent;
+  border: none;
+  color: #b00020;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.participant-remove:hover {
+  background: rgba(176,0,32,0.08);
+}
+
 /* No participants text */
 .no-participants p {
   color: #757575;
